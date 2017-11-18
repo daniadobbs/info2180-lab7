@@ -22,6 +22,8 @@ window.onload=function(){
             else{
                 alert("Cannot make request");
             }
+        httpRequest.open("GET", "world.php", true);
+        httpRequest.send();
         }
     }//end of getContent
     
