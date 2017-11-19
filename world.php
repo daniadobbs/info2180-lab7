@@ -1,5 +1,6 @@
 <?php
 
+
 $host = getenv('IP');
 $username = getenv('C9_USER');
 $password = '';
@@ -28,4 +29,4 @@ $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
     echo '</ul>'; 
     
-}
+}// end of if

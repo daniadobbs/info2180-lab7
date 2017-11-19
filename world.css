@@ -57,8 +57,15 @@ input{
     position:absolute;
     float: left;
     top:150px;
-    left:490px;
+    left:460px;
+    font-size: 18px;
 }
+
+input[type=checkbox]:checked + label{
+    color:yellow;
+    background-color:black;
+}
+
 
 
 

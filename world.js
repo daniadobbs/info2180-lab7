@@ -3,6 +3,7 @@
 window.onload=function(){
     var lookupbtn= document.getElementById("lookup");
     var httpRequest=new XMLHttpRequest();
+    var result= document.getElementById("result");
     lookupbtn.onclick=makeRequest;
     
     
@@ -17,7 +18,7 @@ window.onload=function(){
     function getContent(){
         if(httpRequest.readyState=== XMLHttpRequest.DONE){
             if(httpRequest.status===200){
-                document.getElementById('result').innerHTML= httpRequest.responseText;
+               result.innerHTML= httpRequest.responseText;
             }
             else{
                 alert("Cannot make request");
@@ -25,6 +26,7 @@ window.onload=function(){
         httpRequest.open("GET", "world.php", true);
         httpRequest.send();
         }
+        
     }//end of getContent
     
         
